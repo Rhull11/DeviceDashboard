@@ -29,5 +29,7 @@ namespace DeviceDashboard.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<DeviceDashboard.Models.DeviceConfig> DeviceConfigs { get; set; }
     }
 }
