@@ -35,21 +35,6 @@ namespace DeviceDashboard.Controllers
             return Ok(deviceConfig);
         }
 
-        //// GET: api/DeviceConfigs/latest
-        //[ResponseType(typeof(DeviceConfig))]
-        //public IHttpActionResult GetLatestDeviceConfig(int id)
-        //{
-        //    id = db.DeviceConfigs.Max(u => u.ID);
-        //    DeviceConfig deviceConfig = deviceConfig = db.DeviceConfigs.Find(id);
-      
-        //    if (deviceConfig == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return Ok(deviceConfig);
-        //}
-
         // PUT: api/DeviceConfigs/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutDeviceConfig(int id, DeviceConfig deviceConfig)
